@@ -1,0 +1,101 @@
+<fd-layout-grid fdCompact >
+    <div [fdLayoutGridCol]="12">
+        <div fd-form-item>
+            <label fd-form-label [required]="true" for="input-2">What should this settings be call?</label>
+            <input fd-form-control type="text" id="input-2" aria-required="true" />
+        </div>
+    </div>
+
+    <div [fdLayoutGridCol]="12">
+        <!-- <example-layout-grid-block>Sm: 12, Md: 6, Lg: 4, Xl: 3</example-layout-grid-block> -->
+        <h4 fd-title [wrap]="true">What is a delivery as on time?</h4>
+        <h6 fd-title [wrap]="true" style="color: var(--sapContent_LabelColor);">Define a delivery as on time when all the receipts
+            are done within this time period from requested delivery date</h6>
+        <div fdLayoutGridRow [fdLayoutGridCol]="12" >
+
+            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="5" [colLg]="5" [colXl]="5">
+                <label fd-form-label for="input-2">Early delivery limit (in days)</label>
+                <input fd-form-control type="text" id="input-2" aria-required="true" />
+            </div>
+
+            <div [fdLayoutGridCol]="2"></div>
+            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="5" [colLg]="5" [colXl]="5">
+                <label fd-form-label for="input-2">Late delivery limit (in days)</label>
+                <input fd-form-control type="text" id="input-2" aria-required="true" />
+            </div>
+        </div>
+        <div [fdLayoutGridCol]="12">
+            <fd-checkbox label="Always consider early delivery as on time"></fd-checkbox>
+        </div>
+    </div>
+
+    <div [fdLayoutGridCol]="12">
+        <!-- <example-layout-grid-block>Sm: 12, Md: 6, Lg: 4, Xl: 3</example-layout-grid-block> -->
+        <h4 fd-title [wrap]="true">What is a delivery as in full?</h4>
+        <h6 fd-title [wrap]="true" style="color: var(--sapContent_LabelColor);">Define a delivery as in full when the total deliveryed
+            quantity is within this % range of requested quantity</h6>
+        <div fdLayoutGridRow [fdLayoutGridCol]="12">
+            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="5" [colLg]="5" [colXl]="5">
+                <label fd-form-label for="input-2">Maximum underdelivery %</label>
+                <input fd-form-control type="text" id="input-2" aria-required="true" />
+            </div>
+            <div [fdLayoutGridCol]="2"></div>
+            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="5" [colLg]="5" [colXl]="5">
+                <label fd-form-label for="input-2">Maximum overdelivery %</label>
+                <input fd-form-control type="text" id="input-2" aria-required="true" />
+            </div>
+        </div>
+        <div [fdLayoutGridCol]="12" [colOffsetMd]="7" [colOffsetLg]="7" [colOffsetXl]="7">
+            <fd-checkbox label="Always consider over delivery as in full"></fd-checkbox>
+        </div>
+    </div>
+
+    <div [fdLayoutGridCol]="12">
+        <!-- <example-layout-grid-block>Sm: 12, Md: 6, Lg: 4, Xl: 3</example-layout-grid-block> -->
+        <h4 fd-title [wrap]="true">What purchase orders should apply the delivery execution metrics?</h4>
+        <div fdLayoutGridRow [fdLayoutGridCol]="12">
+            <div fd-form-item>
+                <fd-radio-button name="name1" value="1">
+                    All past purchase orders
+                </fd-radio-button>
+            </div>
+            <div fd-form-item>
+                <fd-radio-button name="name1" value="2">
+                    The purchase orders on and after
+                </fd-radio-button>
+            </div>
+            <div fd-form-item>
+                <fd-date-picker>
+                </fd-date-picker>
+            </div>
+        </div>
+    </div>
+    <div [fdLayoutGridCol]="12">
+        <!-- <example-layout-grid-block>Sm: 12, Md: 6, Lg: 4, Xl: 3</example-layout-grid-block> -->
+        <h4 fd-title [wrap]="true">What rules should be applied?</h4>
+        <div fdLayoutGridRow >
+            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="3" [colLg]="3">
+                <fd-checkbox label="Supplier group"></fd-checkbox>
+            </div>
+            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="9" [colLg]="9">
+                <input fd-form-control type="text" id="input-2" aria-required="true" />
+            </div>
+        </div>
+        <div fdLayoutGridRow >
+            <div fd-form-item [fdLayoutGridCol]="12"  [colMd]="3" [colLg]="3">
+                <fd-checkbox label="Purchasing organization"></fd-checkbox>
+            </div>
+            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="9" [colLg]="9">
+                <input fd-form-control type="text" id="input-2" aria-required="true" />
+            </div>
+        </div>
+        <div fdLayoutGridRow >
+            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="3" [colLg]="3">
+                <fd-checkbox label="Purchasing group"></fd-checkbox>
+            </div>
+            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="9" [colLg]="9">
+                <input fd-form-control type="text" id="input-2" aria-required="true" />
+            </div>
+        </div>
+    </div>
+</fd-layout-grid>

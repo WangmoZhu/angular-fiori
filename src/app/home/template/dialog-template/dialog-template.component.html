@@ -1,0 +1,255 @@
+<!-- <ng-template let-dialog let-dialogConfig="dialogConfig" #createMetricsDialog> -->
+    <fd-dialog>
+        <fd-dialog-header>
+            <h1 fd-title>{{ dialogRef.data.isEdit ? 'Edit metrics settings' : 'Create metrics settings' }}</h1>
+        </fd-dialog-header>
+
+        <fd-dialog-body>
+            <!-- <app-metric-settings></app-metric-settings> -->
+            <form [formGroup]="metricForm">
+                <fd-layout-grid fdCompact >
+                    <div [fdLayoutGridCol]="12">
+                        <div fd-form-item>
+                            <label fd-form-label [required]="true" for="input-2">What should this settings be call?</label>
+                            <input 
+                                fd-form-control 
+                                formControlName="metricTitle"
+                                type="text" 
+                                aria-required="true" />
+                        </div>
+                    </div>
+                
+                    <div [fdLayoutGridCol]="12">
+                        <!-- <example-layout-grid-block>Sm: 12, Md: 6, Lg: 4, Xl: 3</example-layout-grid-block> -->
+                        <h4 fd-title [wrap]="true">What is a delivery as on time?</h4>
+                        <h6 fd-title [wrap]="true" style="color: var(--sapContent_LabelColor);">Define a delivery as on time when all the receipts
+                            are done within this time period from requested delivery date</h6>
+                        <div fdLayoutGridRow [fdLayoutGridCol]="12" >
+                
+                            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="5" [colLg]="5" [colXl]="5">
+                                <label fd-form-label for="input-2">Early delivery limit (in days)</label>
+                                <fd-form-input-message-group 
+                                    [triggers]="[]"
+                                    [fillControlMode]="'equal'"
+                                    [isOpen]="(earlyLimit?.touched && earlyLimit?.errors) ? true : false">
+                                    <input 
+                                        fd-form-control 
+                                        formControlName="earlyLimit"
+                                        type="number" 
+                                        aria-required="true"
+                                        [state]="(earlyLimit?.touched && earlyLimit?.errors) ? 'error' : null"/>
+                                    <fd-form-message type="error">
+                                        {{ earlyLimit?.errors?.['earlyLimitError'] }}
+                                    </fd-form-message>
+                                </fd-form-input-message-group>
+                            </div>
+                
+                            <div [fdLayoutGridCol]="2"></div>
+                            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="5" [colLg]="5" [colXl]="5">
+                                <label fd-form-label for="input-2">Late delivery limit (in days)</label>
+                                <fd-form-input-message-group 
+                                    [triggers]="[]"
+                                    [fillControlMode]="'equal'"
+                                    [isOpen]="(lateLimit?.touched && lateLimit?.errors) ? true : false">
+                                    <input 
+                                        fd-form-control 
+                                        formControlName="lateLimit"
+                                        type="number" 
+                                        aria-required="true"
+                                        [state]="(lateLimit?.touched && lateLimit?.errors) ? 'error' : null"/>
+                                    <fd-form-message type="error">
+                                        {{ lateLimit?.errors?.['lateLimitError'] }}
+                                    </fd-form-message>
+                                </fd-form-input-message-group>
+                            </div>
+                        </div>
+                        <div [fdLayoutGridCol]="12">
+                            <fd-checkbox 
+                                label="Always consider early delivery as on time"
+                                formControlName="alwaysEarly"></fd-checkbox>
+                        </div>
+                    </div>
+                
+                    <div [fdLayoutGridCol]="12">
+                        <!-- <example-layout-grid-block>Sm: 12, Md: 6, Lg: 4, Xl: 3</example-layout-grid-block> -->
+                        <h4 fd-title [wrap]="true">What is a delivery as in full?</h4>
+                        <h6 fd-title [wrap]="true" style="color: var(--sapContent_LabelColor);">Define a delivery as in full when the total deliveryed
+                            quantity is within this % range of requested quantity</h6>
+                        <div fdLayoutGridRow [fdLayoutGridCol]="12">
+                            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="5" [colLg]="5" [colXl]="5">
+                                <label fd-form-label for="input-2">Maximum underdelivery %</label>
+                                <!-- <input 
+                                    fd-form-control 
+                                    formControlName="underMaximum"
+                                    type="text" 
+                                    aria-required="true" /> -->
+                                <fd-form-input-message-group 
+                                    [triggers]="[]"
+                                    [fillControlMode]="'equal'"
+                                    [isOpen]="underMaximum?.errors ? true : false">
+                                    <input 
+                                        fd-form-control 
+                                        formControlName="underMaximum"
+                                        type="number" 
+                                        aria-required="true"
+                                        [state]="underMaximum?.errors ? 'error' : null"/>
+                                    <fd-form-message type="error">
+                                        {{ underMaximum?.errors?.['underdeliveryError'] }}
+                                    </fd-form-message>
+                                </fd-form-input-message-group>
+                            </div>
+                            <div [fdLayoutGridCol]="2"></div>
+                            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="5" [colLg]="5" [colXl]="5">
+                                <label fd-form-label for="input-2">Maximum overdelivery %</label>
+                                <!-- <input 
+                                    fd-form-control 
+                                    formControlName="overMaximum"
+                                    type="text" 
+                                    aria-required="true" /> -->
+                                <fd-form-input-message-group 
+                                    [triggers]="[]"
+                                    [fillControlMode]="'equal'"
+                                    [isOpen]="overMaximum?.errors ? true : false">
+                                    <input 
+                                        fd-form-control 
+                                        formControlName="overMaximum"
+                                        type="number" 
+                                        aria-required="true"
+                                        [state]="overMaximum?.errors ? 'error' : null"/>
+                                    <fd-form-message type="error">
+                                        {{ overMaximum?.errors?.['overdeliveryError'] }}
+                                    </fd-form-message>
+                                </fd-form-input-message-group>
+                            </div>
+                        </div>
+                        <div [fdLayoutGridCol]="12" [colOffsetMd]="7" [colOffsetLg]="7" [colOffsetXl]="7">
+                            <fd-checkbox 
+                                label="Always consider over delivery as in full"
+                                formControlName="alwaysOver"
+                                ></fd-checkbox>
+                        </div>
+                    </div>
+                
+                    <div [fdLayoutGridCol]="12">
+                        <!-- <example-layout-grid-block>Sm: 12, Md: 6, Lg: 4, Xl: 3</example-layout-grid-block> -->
+                        <h4 fd-title [wrap]="true">What purchase orders should apply the delivery execution metrics?</h4>
+                        <div fdLayoutGridRow >
+                            <div fd-form-item [fdLayoutGridCol]="4">
+                                <fd-radio-button 
+                                    [disabled]="true"
+                                    name="effectiveDate" 
+                                    [value]="false"
+                                    [selectedValue]="isAfterDate?.value"
+                                    formControlName="isAfterDate">
+                                    All past purchase orders
+                                </fd-radio-button>
+                            </div>
+                            <div [fdLayoutGridCol]="8">
+                                <div fdLayoutGridRow>
+                                    <div fd-form-item  >
+                                        <fd-radio-button 
+                                            name="effectiveDate" 
+                                            [value]="true"
+                                            [selectedValue]="isAfterDate?.value"
+                                            formControlName="isAfterDate">
+                                            The purchase orders on and after
+                                        </fd-radio-button>
+                                    </div>
+                                    <div fd-form-item [fdLayoutGridCol]="5" [colOffset]="1">
+                                        <fd-date-picker
+                                            formControlName="activeDate"
+                                            [disableFunction]="disableFunction">
+                                        </fd-date-picker>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div [fdLayoutGridCol]="12">
+                        <!-- <example-layout-grid-block>Sm: 12, Md: 6, Lg: 4, Xl: 3</example-layout-grid-block> -->
+                        <h4 fd-title [wrap]="true">What rules should be applied?</h4>
+                        <div fdLayoutGridRow style="min-height: 46px;">
+                            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="3" [colLg]="3">
+                                <fd-checkbox 
+                                    label="Supplier group"
+                                    formControlName="checkSupplierGroup">
+                                </fd-checkbox>
+                            </div>
+                            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="9" [colLg]="9">
+                                <fd-multi-input
+                                    *ngIf="checkSupplierGroup?.value"
+                                    formControlName="supplierGroup"
+                                    placeholder="Search Here..."
+                                    [dropdownValues]="supplierGroup"
+                                    [allowNewTokens]="true"
+                                >
+                                </fd-multi-input>
+                            </div>
+                        </div>
+                        <div fdLayoutGridRow style="min-height: 46px;">
+                            <div fd-form-item [fdLayoutGridCol]="12"  [colMd]="3" [colLg]="3">
+                                <fd-checkbox 
+                                    label="Purchasing organization"
+                                    formControlName="checkPurchaseOrg">
+                                </fd-checkbox>
+                            </div>
+                            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="9" [colLg]="9">
+                                <fd-multi-input
+                                    *ngIf="checkPurchaseOrg?.value"
+                                    formControlName="purchaeOrg"
+                                    [allowNewTokens]="true"
+                                    [displayAddonButton]="false"
+                                >
+                                </fd-multi-input>
+                            </div>
+                        </div>
+                        <div fdLayoutGridRow style="min-height: 46px;">
+                            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="3" [colLg]="3">
+                                <fd-checkbox 
+                                    label="Purchasing group" 
+                                    formControlName="checkPurchaingGroup">
+                                </fd-checkbox>
+                            </div>
+                            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="9" [colLg]="9">
+                                <fd-multi-input
+                                    *ngIf="checkPurchaingGroup?.value"
+                                    formControlName="purchaseGroup"
+                                    [allowNewTokens]="true"
+                                    [displayAddonButton]="false"
+                                >
+                                </fd-multi-input>
+                            </div>
+                        </div>
+                    </div>
+                </fd-layout-grid>
+            </form>
+        </fd-dialog-body>
+
+        <fd-dialog-footer>
+            <fd-button-bar
+                *ngIf="dialogRef.data.isEdit"
+                fdType="ghost"
+                label="Delete"
+                fdCompact
+                (click)="handleDeleteMetricSetting()"
+                ariaLabel="Interested Emphasized"
+            ></fd-button-bar>
+            <fd-button-bar
+                fdType="emphasized"
+                label="Save"
+                [disabled]="metricForm.status == 'INVALID' ? true : false"
+                fdCompact
+                (click)="handleSaveMetricSetting()"
+                ariaLabel="Interested Emphasized"
+            ></fd-button-bar>
+
+            <fd-button-bar
+                fdInitialFocus
+                label="Cancel"
+                fdCompact
+                (click)="dialogRef.dismiss('Cancel')"
+                ariaLabel="Cancel"
+            ></fd-button-bar>
+        </fd-dialog-footer>
+    </fd-dialog>
+<!-- </ng-template> -->

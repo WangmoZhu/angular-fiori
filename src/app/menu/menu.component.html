@@ -1,0 +1,52 @@
+<button fd-button label="menu" [fdMenuTrigger]="menu"></button>
+
+<fd-menu #menu>
+    <li fd-menu-item>
+        <a href="#" fd-menu-interactive>
+            <span fd-menu-title>Option 1</span>
+        </a>
+    </li>
+</fd-menu>
+
+<button fd-button label="menu with icons" [fdMenu]="true" [fdMenuTrigger]="menuIcons"></button>
+
+<fd-menu #menuIcons>
+    <li fd-menu-item>
+        <div fd-menu-interactive>
+            <fd-menu-addon position="before" glyph="cart"></fd-menu-addon>
+            <span fd-menu-title>Hello</span>
+        </div>
+    </li>
+    <li fd-menu-item (onSelect)="onSelect($event)">
+        <a fd-menu-interactive href="#">
+            <fd-menu-addon position="before" glyph="accept"></fd-menu-addon>
+            <span fd-menu-title>Option 2</span>
+            <fd-menu-addon glyph="decline"></fd-menu-addon>
+        </a>
+    </li>
+</fd-menu>
+
+<button fd-button label="multi level menu" [fdMenu]="true" [fdMenuTrigger]="multiMenu"></button>
+
+<fd-menu #multiMenu>
+    <li fd-menu-item [submenu]="fruits">
+        <a href="#" fd-menu-interactive>
+            <span fd-menu-title>fruits</span>
+            <fd-menu-addon [submenuIndicator]="true"></fd-menu-addon>
+        </a>
+    </li>
+</fd-menu>
+
+<fd-submenu #fruits>
+    <li fd-menu-item>
+        <a href="#" fd-menu-interactive>
+            <span fd-menu-title>Pineapple</span>
+        </a>
+    </li>
+
+    <li fd-menu-item>
+        <a href="#" fd-menu-interactive>
+            <span fd-menu-title>Banana</span>
+        </a>
+    </li>
+</fd-submenu>

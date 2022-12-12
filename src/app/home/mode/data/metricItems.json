@@ -1,0 +1,42 @@
+[
+    {
+      "metricId": 1,
+      "metricTitle": "Delivery OTIF for Suppliers NA",
+      "earlyLimit": 5,
+      "lateLimit": 10,
+      "alwaysEarly": false,
+      "underMaximum": 5,
+      "overMaximum": 5,
+      "alwaysOver": false,
+      "isActive": true,
+      "activeDate": null,
+      "isAllPast": false,
+      "isAfterDate": false,
+      "supplierGroup": ["Supplier NA"],
+      "checkSupplierGroup": true,
+      "purchaseGroup": ["North America"],
+      "checkPurchaingGroup": true,
+      "purchaeOrg": ["PO NA"],
+      "checkPurchaseOrg": true
+    },
+    {
+      "metricId": 2,
+      "metricTitle": "Delivery OTIF for Suppliers NA",
+      "earlyLimit": 5,
+      "lateLimit": 10,
+      "alwaysEarly": false,
+      "underMaximum": 5,
+      "overMaximum": 5,
+      "alwaysOver": false,
+      "isActive": true,
+      "activeDate": null,
+      "isAllPast": false,
+      "isAfterDate": false,
+      "supplierGroup": ["Supplier EU"],
+      "checkSupplierGroup": true,
+      "purchaseGroup": ["North America"],
+      "checkPurchaingGroup": true,
+      "purchaeOrg": ["PO NA"],
+      "checkPurchaseOrg": true
+      }
+  ]

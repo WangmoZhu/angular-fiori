@@ -1,0 +1,1332 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>angular-fiori documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">angular-fiori documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  DialogTemplateComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/home/template/dialog-template/dialog-template.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-dialog-template</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./dialog-template.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./dialog-template.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialogRef" >dialogRef</a>
+                            </li>
+                            <li>
+                                <a href="#disableFunction" >disableFunction</a>
+                            </li>
+                            <li>
+                                <a href="#metricForm" >metricForm</a>
+                            </li>
+                            <li>
+                                <a href="#metricItem" >metricItem</a>
+                            </li>
+                            <li>
+                                <a href="#secondConfig" >secondConfig</a>
+                            </li>
+                            <li>
+                                <a href="#supplierGroup" >supplierGroup</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#handleDeleteMetricSetting" >handleDeleteMetricSetting</a>
+                            </li>
+                            <li>
+                                <a href="#handleSaveMetricSetting" >handleSaveMetricSetting</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#checkSupplierGroup" >checkSupplierGroup</a>
+                                </li>
+                                <li>
+                                    <a href="#checkPurchaingGroup" >checkPurchaingGroup</a>
+                                </li>
+                                <li>
+                                    <a href="#checkPurchaseOrg" >checkPurchaseOrg</a>
+                                </li>
+                                <li>
+                                    <a href="#earlyLimit" >earlyLimit</a>
+                                </li>
+                                <li>
+                                    <a href="#lateLimit" >lateLimit</a>
+                                </li>
+                                <li>
+                                    <a href="#overMaximum" >overMaximum</a>
+                                </li>
+                                <li>
+                                    <a href="#underMaximum" >underMaximum</a>
+                                </li>
+                                <li>
+                                    <a href="#isAfterDate" >isAfterDate</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(dialogRef: DialogRef, fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, datetimeAdapter: DatetimeAdapter<FdDate>, metricService: <a href="../injectables/MetricSettingService.html" target="_self">MetricSettingService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/home/template/dialog-template/dialog-template.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dialogRef</td>
+                                                  
+                                                        <td>
+                                                                    <code>DialogRef</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>datetimeAdapter</td>
+                                                  
+                                                        <td>
+                                                                    <code>DatetimeAdapter&lt;FdDate&gt;</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>metricService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MetricSettingService.html" target="_self" >MetricSettingService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleDeleteMetricSetting"></a>
+                    <span class="name">
+                        <span ><b>handleDeleteMetricSetting</b></span>
+                        <a href="#handleDeleteMetricSetting"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleDeleteMetricSetting()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="131"
+                            class="link-to-prism">src/app/home/template/dialog-template/dialog-template.component.ts:131</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleSaveMetricSetting"></a>
+                    <span class="name">
+                        <span ><b>handleSaveMetricSetting</b></span>
+                        <a href="#handleSaveMetricSetting"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleSaveMetricSetting()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="124"
+                            class="link-to-prism">src/app/home/template/dialog-template/dialog-template.component.ts:124</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="31"
+                            class="link-to-prism">src/app/home/template/dialog-template/dialog-template.component.ts:31</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dialogRef"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dialogRef</b></span>
+                        <a href="#dialogRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>DialogRef</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/home/template/dialog-template/dialog-template.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="disableFunction"></a>
+                    <span class="name">
+                        <span ><b>disableFunction</b></span>
+                        <a href="#disableFunction"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="122" class="link-to-prism">src/app/home/template/dialog-template/dialog-template.component.ts:122</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="metricForm"></a>
+                    <span class="name">
+                        <span ><b>metricForm</b></span>
+                        <a href="#metricForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/home/template/dialog-template/dialog-template.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="metricItem"></a>
+                    <span class="name">
+                        <span ><b>metricItem</b></span>
+                        <a href="#metricItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Metric.html" target="_self" >Metric</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/home/template/dialog-template/dialog-template.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="secondConfig"></a>
+                    <span class="name">
+                        <span ><b>secondConfig</b></span>
+                        <a href="#secondConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MobileModeConfig</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    approveButtonText: &#x27;Approve&#x27;,
+    cancelButtonText: &#x27;Cancel&#x27;,
+    hasCloseButton: true,
+    dialogConfig: {
+        ariaLabel: &#x27;Select fruits dialog&#x27;
+    }
+}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/home/template/dialog-template/dialog-template.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="supplierGroup"></a>
+                    <span class="name">
+                        <span ><b>supplierGroup</b></span>
+                        <a href="#supplierGroup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/home/template/dialog-template/dialog-template.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="checkSupplierGroup"></a>
+                        <span class="name"><b>checkSupplierGroup</b><a href="#checkSupplierGroup"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>checkSupplierGroup()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="138" class="link-to-prism">src/app/home/template/dialog-template/dialog-template.component.ts:138</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="checkPurchaingGroup"></a>
+                        <span class="name"><b>checkPurchaingGroup</b><a href="#checkPurchaingGroup"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>checkPurchaingGroup()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="142" class="link-to-prism">src/app/home/template/dialog-template/dialog-template.component.ts:142</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="checkPurchaseOrg"></a>
+                        <span class="name"><b>checkPurchaseOrg</b><a href="#checkPurchaseOrg"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>checkPurchaseOrg()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="146" class="link-to-prism">src/app/home/template/dialog-template/dialog-template.component.ts:146</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="earlyLimit"></a>
+                        <span class="name"><b>earlyLimit</b><a href="#earlyLimit"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>earlyLimit()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="150" class="link-to-prism">src/app/home/template/dialog-template/dialog-template.component.ts:150</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lateLimit"></a>
+                        <span class="name"><b>lateLimit</b><a href="#lateLimit"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>lateLimit()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="154" class="link-to-prism">src/app/home/template/dialog-template/dialog-template.component.ts:154</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="overMaximum"></a>
+                        <span class="name"><b>overMaximum</b><a href="#overMaximum"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>overMaximum()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="158" class="link-to-prism">src/app/home/template/dialog-template/dialog-template.component.ts:158</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="underMaximum"></a>
+                        <span class="name"><b>underMaximum</b><a href="#underMaximum"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>underMaximum()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="162" class="link-to-prism">src/app/home/template/dialog-template/dialog-template.component.ts:162</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isAfterDate"></a>
+                        <span class="name"><b>isAfterDate</b><a href="#isAfterDate"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>isAfterDate()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="166" class="link-to-prism">src/app/home/template/dialog-template/dialog-template.component.ts:166</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Input, OnInit } from &#x27;@angular/core&#x27;;
+import { FormArray, FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { DatetimeAdapter, DialogRef, FdDate, MobileModeConfig } from &#x27;@fundamental-ngx/core&#x27;;
+import { Metric, METRIC_DEFAULT_VALUE } from &#x27;../../mode/metric&#x27;;
+import { MetricSettingService } from &#x27;../../service/metric-setting.service&#x27;;
+import { MetricFormValidators } from &#x27;../../validators/mertic-form-validators&#x27;;
+
+@Component({
+  selector: &#x27;app-dialog-template&#x27;,
+  templateUrl: &#x27;./dialog-template.component.html&#x27;,
+  styleUrls: [&#x27;./dialog-template.component.css&#x27;]
+})
+export class DialogTemplateComponent implements OnInit {
+  metricForm!: FormGroup
+  metricItem!: Metric
+  supplierGroup!: string[]
+  secondConfig: MobileModeConfig &#x3D; {
+    approveButtonText: &#x27;Approve&#x27;,
+    cancelButtonText: &#x27;Cancel&#x27;,
+    hasCloseButton: true,
+    dialogConfig: {
+        ariaLabel: &#x27;Select fruits dialog&#x27;
+    }
+};
+  constructor(
+    public dialogRef: DialogRef,
+    private fb: FormBuilder,
+    private datetimeAdapter: DatetimeAdapter&lt;FdDate&gt;,
+    private metricService: MetricSettingService) { }
+
+  ngOnInit(): void {
+
+    this.metricService.getSupplierGroup().subscribe((value: any) &#x3D;&gt; {
+      // console.log(value)
+      this.supplierGroup &#x3D; value.supplierGroup ? value.supplierGroup : []
+    })
+
+    this.metricItem &#x3D; this.dialogRef.data.metricItem ? this.dialogRef.data.metricItem : METRIC_DEFAULT_VALUE
+
+    this.metricForm &#x3D; this.fb.group({
+      metricId: this.metricItem.metricId,
+      metricTitle: [this.metricItem.metricTitle, Validators.required],
+      earlyLimit: [this.metricItem.earlyLimit, { validators: [MetricFormValidators.DeliveryOnTimeLimitValidator(&#x27;earlyLimit&#x27;)] }],
+      lateLimit: [this.metricItem.lateLimit, { validators: [MetricFormValidators.DeliveryOnTimeLimitValidator(&#x27;lateLimit&#x27;)] }],
+      alwaysEarly: this.metricItem.alwaysEarly,
+      underMaximum: [this.metricItem.underMaximum, { validators: [MetricFormValidators.DeliveryInfullMaxValidator(&#x27;underdelivery&#x27;)] }],
+      overMaximum: [this.metricItem.overMaximum, { validators: [MetricFormValidators.DeliveryInfullMaxValidator(&#x27;overdelivery&#x27;)] }],
+      alwaysOver: this.metricItem.alwaysOver,
+      isActive: this.metricItem.isActive,
+      isAfterDate: this.metricItem.isAfterDate,
+      activeDate: this.metricItem.activeDate,
+      // supplierGroup: this.metricItem?.supplierGroup || [],
+      supplierGroup: [this.metricItem.supplierGroup],
+      checkSupplierGroup: this.metricItem.checkSupplierGroup,
+      purchaseGroup: [this.metricItem.purchaseGroup],
+      checkPurchaingGroup: this.metricItem.checkPurchaingGroup,
+      purchaeOrg: [this.metricItem.purchaeOrg],
+      checkPurchaseOrg: this.metricItem.checkPurchaseOrg
+    })
+
+    if (this.metricForm.get(&quot;alwaysEarly&quot;)?.value) {
+      this.earlyLimit?.reset()
+      this.earlyLimit?.disable()
+      this.lateLimit?.disable()
+    }
+
+    if (this.metricForm.get(&quot;alwaysOver&quot;)?.value) {
+      this.overMaximum?.reset()
+      this.overMaximum?.disable()
+      this.underMaximum?.disable()
+    }
+
+    if(!this.metricForm.get(&quot;isAfterDate&quot;)?.value){
+      this.metricForm.get(&#x27;activeDate&#x27;)?.disable()
+    }
+
+    this.metricForm.get(&quot;alwaysEarly&quot;)?.valueChanges.subscribe(value &#x3D;&gt; {
+      if (value) {
+        this.earlyLimit?.reset()
+        this.earlyLimit?.disable()
+        this.lateLimit?.disable()
+        this.lateLimit?.setValue(0)
+      } else {
+        this.earlyLimit?.setValue(0)
+        this.earlyLimit?.enable()
+        this.lateLimit?.enable()
+      }
+      // value ? this.earlyLimit?.disable() : this.earlyLimit?.enable()
+    })
+
+    this.metricForm.get(&quot;alwaysOver&quot;)?.valueChanges.subscribe(value &#x3D;&gt; {
+      if (value) {
+        this.overMaximum?.reset()
+        this.overMaximum?.disable()
+        this.underMaximum?.disable()
+        this.underMaximum?.setValue(0)
+      } else {
+        this.overMaximum?.setValue(0)
+        this.overMaximum?.enable()
+        this.underMaximum?.enable()
+      }
+      // value ? this.overMaximum?.disable() : this.overMaximum?.enable()
+    })
+
+    this.metricForm.get(&quot;isAfterDate&quot;)?.valueChanges.subscribe(value &#x3D;&gt; {
+      value ? this.metricForm.get(&#x27;activeDate&#x27;)?.enable() : this.metricForm.get(&#x27;activeDate&#x27;)?.disable()
+    })
+
+    this.metricForm.get(&quot;checkSupplierGroup&quot;)?.valueChanges.subscribe(value &#x3D;&gt; {
+      if (!value) this.metricForm.get(&quot;supplierGroup&quot;)?.setValue([])
+    })
+
+    this.metricForm.get(&quot;checkPurchaingGroup&quot;)?.valueChanges.subscribe(value &#x3D;&gt; {
+      if (!value) this.metricForm.get(&quot;purchaseGroup&quot;)?.setValue([])
+    })
+
+    this.metricForm.get(&quot;checkPurchaseOrg&quot;)?.valueChanges.subscribe(value &#x3D;&gt; {
+      if (!value) this.metricForm.get(&quot;purchaeOrg&quot;)?.setValue([])
+    })
+  }
+
+  disableFunction &#x3D; (fdDate: FdDate): boolean &#x3D;&gt; this.datetimeAdapter.compareDate(fdDate, FdDate.getToday()) &lt; 0;
+
+  handleSaveMetricSetting() {
+    this.dialogRef.close({
+      behavior: &quot;save&quot;,
+      data: this.metricForm.getRawValue()
+    })
+  }
+
+  handleDeleteMetricSetting() {
+    this.dialogRef.close({
+      behavior: &quot;delete&quot;,
+      data: this.metricForm.getRawValue()
+    })
+  }
+
+  get checkSupplierGroup() {
+    return this.metricForm.get(&#x27;checkSupplierGroup&#x27;)
+  }
+
+  get checkPurchaingGroup() {
+    return this.metricForm.get(&#x27;checkPurchaingGroup&#x27;)
+  }
+
+  get checkPurchaseOrg() {
+    return this.metricForm.get(&#x27;checkPurchaseOrg&#x27;)
+  }
+
+  get earlyLimit() {
+    return this.metricForm.get(&#x27;earlyLimit&#x27;)
+  }
+
+  get lateLimit() {
+    return this.metricForm.get(&#x27;lateLimit&#x27;)
+  }
+
+  get overMaximum() {
+    return this.metricForm.get(&#x27;overMaximum&#x27;)
+  }
+
+  get underMaximum() {
+    return this.metricForm.get(&#x27;underMaximum&#x27;)
+  }
+
+  get isAfterDate() {
+    return this.metricForm.get(&#x27;isAfterDate&#x27;)
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!-- &lt;ng-template let-dialog let-dialogConfig&#x3D;&quot;dialogConfig&quot; #createMetricsDialog&gt; --&gt;
+    &lt;fd-dialog&gt;
+        &lt;fd-dialog-header&gt;
+            &lt;h1 fd-title&gt;{{ dialogRef.data.isEdit ? &#x27;Edit metrics settings&#x27; : &#x27;Create metrics settings&#x27; }}&lt;/h1&gt;
+        &lt;/fd-dialog-header&gt;
+
+        &lt;fd-dialog-body&gt;
+            &lt;!-- &lt;app-metric-settings&gt;&lt;/app-metric-settings&gt; --&gt;
+            &lt;form [formGroup]&#x3D;&quot;metricForm&quot;&gt;
+                &lt;fd-layout-grid fdCompact &gt;
+                    &lt;div [fdLayoutGridCol]&#x3D;&quot;12&quot;&gt;
+                        &lt;div fd-form-item&gt;
+                            &lt;label fd-form-label [required]&#x3D;&quot;true&quot; for&#x3D;&quot;input-2&quot;&gt;What should this settings be call?&lt;/label&gt;
+                            &lt;input 
+                                fd-form-control 
+                                formControlName&#x3D;&quot;metricTitle&quot;
+                                type&#x3D;&quot;text&quot; 
+                                aria-required&#x3D;&quot;true&quot; /&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                
+                    &lt;div [fdLayoutGridCol]&#x3D;&quot;12&quot;&gt;
+                        &lt;!-- &lt;example-layout-grid-block&gt;Sm: 12, Md: 6, Lg: 4, Xl: 3&lt;/example-layout-grid-block&gt; --&gt;
+                        &lt;h4 fd-title [wrap]&#x3D;&quot;true&quot;&gt;What is a delivery as on time?&lt;/h4&gt;
+                        &lt;h6 fd-title [wrap]&#x3D;&quot;true&quot; style&#x3D;&quot;color: var(--sapContent_LabelColor);&quot;&gt;Define a delivery as on time when all the receipts
+                            are done within this time period from requested delivery date&lt;/h6&gt;
+                        &lt;div fdLayoutGridRow [fdLayoutGridCol]&#x3D;&quot;12&quot; &gt;
+                
+                            &lt;div fd-form-item [fdLayoutGridCol]&#x3D;&quot;12&quot; [colMd]&#x3D;&quot;5&quot; [colLg]&#x3D;&quot;5&quot; [colXl]&#x3D;&quot;5&quot;&gt;
+                                &lt;label fd-form-label for&#x3D;&quot;input-2&quot;&gt;Early delivery limit (in days)&lt;/label&gt;
+                                &lt;fd-form-input-message-group 
+                                    [triggers]&#x3D;&quot;[]&quot;
+                                    [fillControlMode]&#x3D;&quot;&#x27;equal&#x27;&quot;
+                                    [isOpen]&#x3D;&quot;(earlyLimit?.touched &amp;&amp; earlyLimit?.errors) ? true : false&quot;&gt;
+                                    &lt;input 
+                                        fd-form-control 
+                                        formControlName&#x3D;&quot;earlyLimit&quot;
+                                        type&#x3D;&quot;number&quot; 
+                                        aria-required&#x3D;&quot;true&quot;
+                                        [state]&#x3D;&quot;(earlyLimit?.touched &amp;&amp; earlyLimit?.errors) ? &#x27;error&#x27; : null&quot;/&gt;
+                                    &lt;fd-form-message type&#x3D;&quot;error&quot;&gt;
+                                        {{ earlyLimit?.errors?.[&#x27;earlyLimitError&#x27;] }}
+                                    &lt;/fd-form-message&gt;
+                                &lt;/fd-form-input-message-group&gt;
+                            &lt;/div&gt;
+                
+                            &lt;div [fdLayoutGridCol]&#x3D;&quot;2&quot;&gt;&lt;/div&gt;
+                            &lt;div fd-form-item [fdLayoutGridCol]&#x3D;&quot;12&quot; [colMd]&#x3D;&quot;5&quot; [colLg]&#x3D;&quot;5&quot; [colXl]&#x3D;&quot;5&quot;&gt;
+                                &lt;label fd-form-label for&#x3D;&quot;input-2&quot;&gt;Late delivery limit (in days)&lt;/label&gt;
+                                &lt;fd-form-input-message-group 
+                                    [triggers]&#x3D;&quot;[]&quot;
+                                    [fillControlMode]&#x3D;&quot;&#x27;equal&#x27;&quot;
+                                    [isOpen]&#x3D;&quot;(lateLimit?.touched &amp;&amp; lateLimit?.errors) ? true : false&quot;&gt;
+                                    &lt;input 
+                                        fd-form-control 
+                                        formControlName&#x3D;&quot;lateLimit&quot;
+                                        type&#x3D;&quot;number&quot; 
+                                        aria-required&#x3D;&quot;true&quot;
+                                        [state]&#x3D;&quot;(lateLimit?.touched &amp;&amp; lateLimit?.errors) ? &#x27;error&#x27; : null&quot;/&gt;
+                                    &lt;fd-form-message type&#x3D;&quot;error&quot;&gt;
+                                        {{ lateLimit?.errors?.[&#x27;lateLimitError&#x27;] }}
+                                    &lt;/fd-form-message&gt;
+                                &lt;/fd-form-input-message-group&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div [fdLayoutGridCol]&#x3D;&quot;12&quot;&gt;
+                            &lt;fd-checkbox 
+                                label&#x3D;&quot;Always consider early delivery as on time&quot;
+                                formControlName&#x3D;&quot;alwaysEarly&quot;&gt;&lt;/fd-checkbox&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                
+                    &lt;div [fdLayoutGridCol]&#x3D;&quot;12&quot;&gt;
+                        &lt;!-- &lt;example-layout-grid-block&gt;Sm: 12, Md: 6, Lg: 4, Xl: 3&lt;/example-layout-grid-block&gt; --&gt;
+                        &lt;h4 fd-title [wrap]&#x3D;&quot;true&quot;&gt;What is a delivery as in full?&lt;/h4&gt;
+                        &lt;h6 fd-title [wrap]&#x3D;&quot;true&quot; style&#x3D;&quot;color: var(--sapContent_LabelColor);&quot;&gt;Define a delivery as in full when the total deliveryed
+                            quantity is within this % range of requested quantity&lt;/h6&gt;
+                        &lt;div fdLayoutGridRow [fdLayoutGridCol]&#x3D;&quot;12&quot;&gt;
+                            &lt;div fd-form-item [fdLayoutGridCol]&#x3D;&quot;12&quot; [colMd]&#x3D;&quot;5&quot; [colLg]&#x3D;&quot;5&quot; [colXl]&#x3D;&quot;5&quot;&gt;
+                                &lt;label fd-form-label for&#x3D;&quot;input-2&quot;&gt;Maximum underdelivery %&lt;/label&gt;
+                                &lt;!-- &lt;input 
+                                    fd-form-control 
+                                    formControlName&#x3D;&quot;underMaximum&quot;
+                                    type&#x3D;&quot;text&quot; 
+                                    aria-required&#x3D;&quot;true&quot; /&gt; --&gt;
+                                &lt;fd-form-input-message-group 
+                                    [triggers]&#x3D;&quot;[]&quot;
+                                    [fillControlMode]&#x3D;&quot;&#x27;equal&#x27;&quot;
+                                    [isOpen]&#x3D;&quot;underMaximum?.errors ? true : false&quot;&gt;
+                                    &lt;input 
+                                        fd-form-control 
+                                        formControlName&#x3D;&quot;underMaximum&quot;
+                                        type&#x3D;&quot;number&quot; 
+                                        aria-required&#x3D;&quot;true&quot;
+                                        [state]&#x3D;&quot;underMaximum?.errors ? &#x27;error&#x27; : null&quot;/&gt;
+                                    &lt;fd-form-message type&#x3D;&quot;error&quot;&gt;
+                                        {{ underMaximum?.errors?.[&#x27;underdeliveryError&#x27;] }}
+                                    &lt;/fd-form-message&gt;
+                                &lt;/fd-form-input-message-group&gt;
+                            &lt;/div&gt;
+                            &lt;div [fdLayoutGridCol]&#x3D;&quot;2&quot;&gt;&lt;/div&gt;
+                            &lt;div fd-form-item [fdLayoutGridCol]&#x3D;&quot;12&quot; [colMd]&#x3D;&quot;5&quot; [colLg]&#x3D;&quot;5&quot; [colXl]&#x3D;&quot;5&quot;&gt;
+                                &lt;label fd-form-label for&#x3D;&quot;input-2&quot;&gt;Maximum overdelivery %&lt;/label&gt;
+                                &lt;!-- &lt;input 
+                                    fd-form-control 
+                                    formControlName&#x3D;&quot;overMaximum&quot;
+                                    type&#x3D;&quot;text&quot; 
+                                    aria-required&#x3D;&quot;true&quot; /&gt; --&gt;
+                                &lt;fd-form-input-message-group 
+                                    [triggers]&#x3D;&quot;[]&quot;
+                                    [fillControlMode]&#x3D;&quot;&#x27;equal&#x27;&quot;
+                                    [isOpen]&#x3D;&quot;overMaximum?.errors ? true : false&quot;&gt;
+                                    &lt;input 
+                                        fd-form-control 
+                                        formControlName&#x3D;&quot;overMaximum&quot;
+                                        type&#x3D;&quot;number&quot; 
+                                        aria-required&#x3D;&quot;true&quot;
+                                        [state]&#x3D;&quot;overMaximum?.errors ? &#x27;error&#x27; : null&quot;/&gt;
+                                    &lt;fd-form-message type&#x3D;&quot;error&quot;&gt;
+                                        {{ overMaximum?.errors?.[&#x27;overdeliveryError&#x27;] }}
+                                    &lt;/fd-form-message&gt;
+                                &lt;/fd-form-input-message-group&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div [fdLayoutGridCol]&#x3D;&quot;12&quot; [colOffsetMd]&#x3D;&quot;7&quot; [colOffsetLg]&#x3D;&quot;7&quot; [colOffsetXl]&#x3D;&quot;7&quot;&gt;
+                            &lt;fd-checkbox 
+                                label&#x3D;&quot;Always consider over delivery as in full&quot;
+                                formControlName&#x3D;&quot;alwaysOver&quot;
+                                &gt;&lt;/fd-checkbox&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                
+                    &lt;div [fdLayoutGridCol]&#x3D;&quot;12&quot;&gt;
+                        &lt;!-- &lt;example-layout-grid-block&gt;Sm: 12, Md: 6, Lg: 4, Xl: 3&lt;/example-layout-grid-block&gt; --&gt;
+                        &lt;h4 fd-title [wrap]&#x3D;&quot;true&quot;&gt;What purchase orders should apply the delivery execution metrics?&lt;/h4&gt;
+                        &lt;div fdLayoutGridRow &gt;
+                            &lt;div fd-form-item [fdLayoutGridCol]&#x3D;&quot;4&quot;&gt;
+                                &lt;fd-radio-button 
+                                    [disabled]&#x3D;&quot;true&quot;
+                                    name&#x3D;&quot;effectiveDate&quot; 
+                                    [value]&#x3D;&quot;false&quot;
+                                    [selectedValue]&#x3D;&quot;isAfterDate?.value&quot;
+                                    formControlName&#x3D;&quot;isAfterDate&quot;&gt;
+                                    All past purchase orders
+                                &lt;/fd-radio-button&gt;
+                            &lt;/div&gt;
+                            &lt;div [fdLayoutGridCol]&#x3D;&quot;8&quot;&gt;
+                                &lt;div fdLayoutGridRow&gt;
+                                    &lt;div fd-form-item  &gt;
+                                        &lt;fd-radio-button 
+                                            name&#x3D;&quot;effectiveDate&quot; 
+                                            [value]&#x3D;&quot;true&quot;
+                                            [selectedValue]&#x3D;&quot;isAfterDate?.value&quot;
+                                            formControlName&#x3D;&quot;isAfterDate&quot;&gt;
+                                            The purchase orders on and after
+                                        &lt;/fd-radio-button&gt;
+                                    &lt;/div&gt;
+                                    &lt;div fd-form-item [fdLayoutGridCol]&#x3D;&quot;5&quot; [colOffset]&#x3D;&quot;1&quot;&gt;
+                                        &lt;fd-date-picker
+                                            formControlName&#x3D;&quot;activeDate&quot;
+                                            [disableFunction]&#x3D;&quot;disableFunction&quot;&gt;
+                                        &lt;/fd-date-picker&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div [fdLayoutGridCol]&#x3D;&quot;12&quot;&gt;
+                        &lt;!-- &lt;example-layout-grid-block&gt;Sm: 12, Md: 6, Lg: 4, Xl: 3&lt;/example-layout-grid-block&gt; --&gt;
+                        &lt;h4 fd-title [wrap]&#x3D;&quot;true&quot;&gt;What rules should be applied?&lt;/h4&gt;
+                        &lt;div fdLayoutGridRow style&#x3D;&quot;min-height: 46px;&quot;&gt;
+                            &lt;div fd-form-item [fdLayoutGridCol]&#x3D;&quot;12&quot; [colMd]&#x3D;&quot;3&quot; [colLg]&#x3D;&quot;3&quot;&gt;
+                                &lt;fd-checkbox 
+                                    label&#x3D;&quot;Supplier group&quot;
+                                    formControlName&#x3D;&quot;checkSupplierGroup&quot;&gt;
+                                &lt;/fd-checkbox&gt;
+                            &lt;/div&gt;
+                            &lt;div fd-form-item [fdLayoutGridCol]&#x3D;&quot;12&quot; [colMd]&#x3D;&quot;9&quot; [colLg]&#x3D;&quot;9&quot;&gt;
+                                &lt;fd-multi-input
+                                    *ngIf&#x3D;&quot;checkSupplierGroup?.value&quot;
+                                    formControlName&#x3D;&quot;supplierGroup&quot;
+                                    placeholder&#x3D;&quot;Search Here...&quot;
+                                    [dropdownValues]&#x3D;&quot;supplierGroup&quot;
+                                    [allowNewTokens]&#x3D;&quot;true&quot;
+                                &gt;
+                                &lt;/fd-multi-input&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div fdLayoutGridRow style&#x3D;&quot;min-height: 46px;&quot;&gt;
+                            &lt;div fd-form-item [fdLayoutGridCol]&#x3D;&quot;12&quot;  [colMd]&#x3D;&quot;3&quot; [colLg]&#x3D;&quot;3&quot;&gt;
+                                &lt;fd-checkbox 
+                                    label&#x3D;&quot;Purchasing organization&quot;
+                                    formControlName&#x3D;&quot;checkPurchaseOrg&quot;&gt;
+                                &lt;/fd-checkbox&gt;
+                            &lt;/div&gt;
+                            &lt;div fd-form-item [fdLayoutGridCol]&#x3D;&quot;12&quot; [colMd]&#x3D;&quot;9&quot; [colLg]&#x3D;&quot;9&quot;&gt;
+                                &lt;fd-multi-input
+                                    *ngIf&#x3D;&quot;checkPurchaseOrg?.value&quot;
+                                    formControlName&#x3D;&quot;purchaeOrg&quot;
+                                    [allowNewTokens]&#x3D;&quot;true&quot;
+                                    [displayAddonButton]&#x3D;&quot;false&quot;
+                                &gt;
+                                &lt;/fd-multi-input&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div fdLayoutGridRow style&#x3D;&quot;min-height: 46px;&quot;&gt;
+                            &lt;div fd-form-item [fdLayoutGridCol]&#x3D;&quot;12&quot; [colMd]&#x3D;&quot;3&quot; [colLg]&#x3D;&quot;3&quot;&gt;
+                                &lt;fd-checkbox 
+                                    label&#x3D;&quot;Purchasing group&quot; 
+                                    formControlName&#x3D;&quot;checkPurchaingGroup&quot;&gt;
+                                &lt;/fd-checkbox&gt;
+                            &lt;/div&gt;
+                            &lt;div fd-form-item [fdLayoutGridCol]&#x3D;&quot;12&quot; [colMd]&#x3D;&quot;9&quot; [colLg]&#x3D;&quot;9&quot;&gt;
+                                &lt;fd-multi-input
+                                    *ngIf&#x3D;&quot;checkPurchaingGroup?.value&quot;
+                                    formControlName&#x3D;&quot;purchaseGroup&quot;
+                                    [allowNewTokens]&#x3D;&quot;true&quot;
+                                    [displayAddonButton]&#x3D;&quot;false&quot;
+                                &gt;
+                                &lt;/fd-multi-input&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/fd-layout-grid&gt;
+            &lt;/form&gt;
+        &lt;/fd-dialog-body&gt;
+
+        &lt;fd-dialog-footer&gt;
+            &lt;fd-button-bar
+                *ngIf&#x3D;&quot;dialogRef.data.isEdit&quot;
+                fdType&#x3D;&quot;ghost&quot;
+                label&#x3D;&quot;Delete&quot;
+                fdCompact
+                (click)&#x3D;&quot;handleDeleteMetricSetting()&quot;
+                ariaLabel&#x3D;&quot;Interested Emphasized&quot;
+            &gt;&lt;/fd-button-bar&gt;
+            &lt;fd-button-bar
+                fdType&#x3D;&quot;emphasized&quot;
+                label&#x3D;&quot;Save&quot;
+                [disabled]&#x3D;&quot;metricForm.status &#x3D;&#x3D; &#x27;INVALID&#x27; ? true : false&quot;
+                fdCompact
+                (click)&#x3D;&quot;handleSaveMetricSetting()&quot;
+                ariaLabel&#x3D;&quot;Interested Emphasized&quot;
+            &gt;&lt;/fd-button-bar&gt;
+
+            &lt;fd-button-bar
+                fdInitialFocus
+                label&#x3D;&quot;Cancel&quot;
+                fdCompact
+                (click)&#x3D;&quot;dialogRef.dismiss(&#x27;Cancel&#x27;)&quot;
+                ariaLabel&#x3D;&quot;Cancel&quot;
+            &gt;&lt;/fd-button-bar&gt;
+        &lt;/fd-dialog-footer&gt;
+    &lt;/fd-dialog&gt;
+&lt;!-- &lt;/ng-template&gt; --&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./dialog-template.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!-- <ng-template let-dialog let-dialogConfig="dialogConfig" #createMetricsDialog> -->    <fd-dialog>        <fd-dialog-header>            <h1 fd-title>{{ dialogRef.data.isEdit ? \'Edit metrics settings\' : \'Create metrics settings\' }}</h1>        </fd-dialog-header>        <fd-dialog-body>            <!-- <app-metric-settings></app-metric-settings> -->            <form [formGroup]="metricForm">                <fd-layout-grid fdCompact >                    <div [fdLayoutGridCol]="12">                        <div fd-form-item>                            <label fd-form-label [required]="true" for="input-2">What should this settings be call?</label>                            <input                                 fd-form-control                                 formControlName="metricTitle"                                type="text"                                 aria-required="true" />                        </div>                    </div>                                    <div [fdLayoutGridCol]="12">                        <!-- <example-layout-grid-block>Sm: 12, Md: 6, Lg: 4, Xl: 3</example-layout-grid-block> -->                        <h4 fd-title [wrap]="true">What is a delivery as on time?</h4>                        <h6 fd-title [wrap]="true" style="color: var(--sapContent_LabelColor);">Define a delivery as on time when all the receipts                            are done within this time period from requested delivery date</h6>                        <div fdLayoutGridRow [fdLayoutGridCol]="12" >                                            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="5" [colLg]="5" [colXl]="5">                                <label fd-form-label for="input-2">Early delivery limit (in days)</label>                                <fd-form-input-message-group                                     [triggers]="[]"                                    [fillControlMode]="\'equal\'"                                    [isOpen]="(earlyLimit?.touched && earlyLimit?.errors) ? true : false">                                    <input                                         fd-form-control                                         formControlName="earlyLimit"                                        type="number"                                         aria-required="true"                                        [state]="(earlyLimit?.touched && earlyLimit?.errors) ? \'error\' : null"/>                                    <fd-form-message type="error">                                        {{ earlyLimit?.errors?.[\'earlyLimitError\'] }}                                    </fd-form-message>                                </fd-form-input-message-group>                            </div>                                            <div [fdLayoutGridCol]="2"></div>                            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="5" [colLg]="5" [colXl]="5">                                <label fd-form-label for="input-2">Late delivery limit (in days)</label>                                <fd-form-input-message-group                                     [triggers]="[]"                                    [fillControlMode]="\'equal\'"                                    [isOpen]="(lateLimit?.touched && lateLimit?.errors) ? true : false">                                    <input                                         fd-form-control                                         formControlName="lateLimit"                                        type="number"                                         aria-required="true"                                        [state]="(lateLimit?.touched && lateLimit?.errors) ? \'error\' : null"/>                                    <fd-form-message type="error">                                        {{ lateLimit?.errors?.[\'lateLimitError\'] }}                                    </fd-form-message>                                </fd-form-input-message-group>                            </div>                        </div>                        <div [fdLayoutGridCol]="12">                            <fd-checkbox                                 label="Always consider early delivery as on time"                                formControlName="alwaysEarly"></fd-checkbox>                        </div>                    </div>                                    <div [fdLayoutGridCol]="12">                        <!-- <example-layout-grid-block>Sm: 12, Md: 6, Lg: 4, Xl: 3</example-layout-grid-block> -->                        <h4 fd-title [wrap]="true">What is a delivery as in full?</h4>                        <h6 fd-title [wrap]="true" style="color: var(--sapContent_LabelColor);">Define a delivery as in full when the total deliveryed                            quantity is within this % range of requested quantity</h6>                        <div fdLayoutGridRow [fdLayoutGridCol]="12">                            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="5" [colLg]="5" [colXl]="5">                                <label fd-form-label for="input-2">Maximum underdelivery %</label>                                <!-- <input                                     fd-form-control                                     formControlName="underMaximum"                                    type="text"                                     aria-required="true" /> -->                                <fd-form-input-message-group                                     [triggers]="[]"                                    [fillControlMode]="\'equal\'"                                    [isOpen]="underMaximum?.errors ? true : false">                                    <input                                         fd-form-control                                         formControlName="underMaximum"                                        type="number"                                         aria-required="true"                                        [state]="underMaximum?.errors ? \'error\' : null"/>                                    <fd-form-message type="error">                                        {{ underMaximum?.errors?.[\'underdeliveryError\'] }}                                    </fd-form-message>                                </fd-form-input-message-group>                            </div>                            <div [fdLayoutGridCol]="2"></div>                            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="5" [colLg]="5" [colXl]="5">                                <label fd-form-label for="input-2">Maximum overdelivery %</label>                                <!-- <input                                     fd-form-control                                     formControlName="overMaximum"                                    type="text"                                     aria-required="true" /> -->                                <fd-form-input-message-group                                     [triggers]="[]"                                    [fillControlMode]="\'equal\'"                                    [isOpen]="overMaximum?.errors ? true : false">                                    <input                                         fd-form-control                                         formControlName="overMaximum"                                        type="number"                                         aria-required="true"                                        [state]="overMaximum?.errors ? \'error\' : null"/>                                    <fd-form-message type="error">                                        {{ overMaximum?.errors?.[\'overdeliveryError\'] }}                                    </fd-form-message>                                </fd-form-input-message-group>                            </div>                        </div>                        <div [fdLayoutGridCol]="12" [colOffsetMd]="7" [colOffsetLg]="7" [colOffsetXl]="7">                            <fd-checkbox                                 label="Always consider over delivery as in full"                                formControlName="alwaysOver"                                ></fd-checkbox>                        </div>                    </div>                                    <div [fdLayoutGridCol]="12">                        <!-- <example-layout-grid-block>Sm: 12, Md: 6, Lg: 4, Xl: 3</example-layout-grid-block> -->                        <h4 fd-title [wrap]="true">What purchase orders should apply the delivery execution metrics?</h4>                        <div fdLayoutGridRow >                            <div fd-form-item [fdLayoutGridCol]="4">                                <fd-radio-button                                     [disabled]="true"                                    name="effectiveDate"                                     [value]="false"                                    [selectedValue]="isAfterDate?.value"                                    formControlName="isAfterDate">                                    All past purchase orders                                </fd-radio-button>                            </div>                            <div [fdLayoutGridCol]="8">                                <div fdLayoutGridRow>                                    <div fd-form-item  >                                        <fd-radio-button                                             name="effectiveDate"                                             [value]="true"                                            [selectedValue]="isAfterDate?.value"                                            formControlName="isAfterDate">                                            The purchase orders on and after                                        </fd-radio-button>                                    </div>                                    <div fd-form-item [fdLayoutGridCol]="5" [colOffset]="1">                                        <fd-date-picker                                            formControlName="activeDate"                                            [disableFunction]="disableFunction">                                        </fd-date-picker>                                    </div>                                </div>                            </div>                        </div>                    </div>                    <div [fdLayoutGridCol]="12">                        <!-- <example-layout-grid-block>Sm: 12, Md: 6, Lg: 4, Xl: 3</example-layout-grid-block> -->                        <h4 fd-title [wrap]="true">What rules should be applied?</h4>                        <div fdLayoutGridRow style="min-height: 46px;">                            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="3" [colLg]="3">                                <fd-checkbox                                     label="Supplier group"                                    formControlName="checkSupplierGroup">                                </fd-checkbox>                            </div>                            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="9" [colLg]="9">                                <fd-multi-input                                    *ngIf="checkSupplierGroup?.value"                                    formControlName="supplierGroup"                                    placeholder="Search Here..."                                    [dropdownValues]="supplierGroup"                                    [allowNewTokens]="true"                                >                                </fd-multi-input>                            </div>                        </div>                        <div fdLayoutGridRow style="min-height: 46px;">                            <div fd-form-item [fdLayoutGridCol]="12"  [colMd]="3" [colLg]="3">                                <fd-checkbox                                     label="Purchasing organization"                                    formControlName="checkPurchaseOrg">                                </fd-checkbox>                            </div>                            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="9" [colLg]="9">                                <fd-multi-input                                    *ngIf="checkPurchaseOrg?.value"                                    formControlName="purchaeOrg"                                    [allowNewTokens]="true"                                    [displayAddonButton]="false"                                >                                </fd-multi-input>                            </div>                        </div>                        <div fdLayoutGridRow style="min-height: 46px;">                            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="3" [colLg]="3">                                <fd-checkbox                                     label="Purchasing group"                                     formControlName="checkPurchaingGroup">                                </fd-checkbox>                            </div>                            <div fd-form-item [fdLayoutGridCol]="12" [colMd]="9" [colLg]="9">                                <fd-multi-input                                    *ngIf="checkPurchaingGroup?.value"                                    formControlName="purchaseGroup"                                    [allowNewTokens]="true"                                    [displayAddonButton]="false"                                >                                </fd-multi-input>                            </div>                        </div>                    </div>                </fd-layout-grid>            </form>        </fd-dialog-body>        <fd-dialog-footer>            <fd-button-bar                *ngIf="dialogRef.data.isEdit"                fdType="ghost"                label="Delete"                fdCompact                (click)="handleDeleteMetricSetting()"                ariaLabel="Interested Emphasized"            ></fd-button-bar>            <fd-button-bar                fdType="emphasized"                label="Save"                [disabled]="metricForm.status == \'INVALID\' ? true : false"                fdCompact                (click)="handleSaveMetricSetting()"                ariaLabel="Interested Emphasized"            ></fd-button-bar>            <fd-button-bar                fdInitialFocus                label="Cancel"                fdCompact                (click)="dialogRef.dismiss(\'Cancel\')"                ariaLabel="Cancel"            ></fd-button-bar>        </fd-dialog-footer>    </fd-dialog><!-- </ng-template> --></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DialogTemplateComponent', 'selector': 'app-dialog-template'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'MetricItemComponent', 'selector': 'app-metric-item'},{'name': 'MetricSettingsComponent', 'selector': 'app-metric-settings'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'DialogTemplateComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DialogTemplateComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

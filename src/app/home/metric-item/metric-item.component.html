@@ -1,0 +1,76 @@
+<fd-layout-grid class="metric-item-line">
+    <div fdLayoutGridRow>
+        <div [fdLayoutGridCol]="6">
+            <h6 fd-title style="font-weight: bold;">{{item.metricTitle}}</h6>
+        </div>
+        <div [fdLayoutGridCol]="5">
+            <span style="color: green; font-weight: bold;">Active</span> on 
+            {{item.activeDate && item.activeDate.toDateString() }}
+        </div>
+        <div [fdLayoutGridCol]="1">
+            <button 
+                style="float: right" 
+                fd-button 
+                fdType="transparent" 
+                glyph="edit" 
+                ariaLabel="Menu Transparent"
+                title="Menu Transparent"
+                (click)="editMetricSetting(item)"></button>
+        </div>
+    </div>
+    <div fdLayoutGridRow>
+        <div [fdLayoutGridCol]="6">
+            <div>
+                <label style="color: rgb(145, 145, 145);">Early delivery limit(in days)</label>
+                <fd-text *ngIf="item.alwaysEarly" text=" Always consider early delivery as on time "></fd-text>
+                <fd-text *ngIf="!item.alwaysEarly" text="{{item.earlyLimit}}"></fd-text>
+                <!-- <p>{{item.earlyLimit}}</p> -->
+            </div>
+            <br>
+            <div>
+                <label style="color: rgb(145, 145, 145);">Late delivery limit(in days)</label>
+                <fd-text text="{{item.lateLimit}}"></fd-text>
+                <!-- <p>{{item.lateLimit}}</p> -->
+            </div>
+        </div>
+        <div [fdLayoutGridCol]="5">
+            <div>
+                <label style="color: rgb(145, 145, 145);">Maximum underdelivery %</label>
+                <fd-text text="{{item.underMaximum}}%"></fd-text>
+            </div>
+            <br>
+            <div>
+                <label style="color: rgb(145, 145, 145);">Maximum overdelivery %</label>
+                <fd-text *ngIf="item.alwaysOver" text="Always consider over delivery as in full"></fd-text>
+                <fd-text *ngIf="!item.alwaysOver" text="{{item.overMaximum}}%"></fd-text>
+            </div>
+        </div>
+    </div>
+    <div fdLayoutGridRow *ngIf="!(item.supplierGroup.length === 0 && item.purchaseGroup.length === 0 && item.purchaeOrg.length === 0)">
+        <div [fdLayoutGridCol]="12">
+            <h6 fd-title>What rules should be applied?</h6>
+        </div>
+    </div>
+    <div fdLayoutGridRow>
+        <div [fdLayoutGridCol]="6">
+            <div *ngIf="item.supplierGroup.length > 0">
+                <label style="color: rgb(145, 145, 145);">Supplier Group</label><br>
+                <!-- <fd-text text="Supplier NA"></fd-text> -->
+                <span *ngFor="let supplier of item.supplierGroup">{{ supplier + ' ' }}</span>
+            </div>
+            <br>
+            <div *ngIf="item.purchaseGroup.length > 0">
+                <label style="color: rgb(145, 145, 145);">Purchasing Group</label><br>
+                <!-- <fd-text text="North America"></fd-text> -->
+                <span *ngFor="let purchase of item.purchaseGroup">{{ purchase + ' ' }}</span>
+            </div>
+        </div>
+        <div [fdLayoutGridCol]="5" *ngIf="item.purchaeOrg.length > 0">
+            <div>
+                <label style="color: rgb(145, 145, 145);">Purchasing organization</label><br>
+                <!-- <fd-text text="PO NA"></fd-text> -->
+                <span *ngFor="let org of item.purchaeOrg">{{ org + ' ' }}</span>
+            </div>
+        </div>
+    </div>
+</fd-layout-grid>

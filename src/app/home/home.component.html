@@ -1,0 +1,73 @@
+<fd-dynamic-page size="large" ariaLabel="Example Dynamic Page" [autoResponsive]="false" fdCompact>
+    <fd-dynamic-page-header title="Analytics Configuration">
+      <fd-dynamic-page-global-actions>
+        <!-- global actions -->
+        <!-- <fd-toolbar fdType="transparent" [clearBorder]="true"> -->
+        <button fd-toolbar-item fd-button fdCozy fdType="emphasized" label="Done" title="Accept"
+          (click)="onClick($event)"></button>
+        <!-- <fd-toolbar-separator></fd-toolbar-separator> -->
+        <!-- </fd-toolbar> -->
+  
+      </fd-dynamic-page-global-actions>
+    </fd-dynamic-page-header>
+    <fd-tab-list maxContentHeight="auto">
+      
+      <fd-tab title="Delivery execution metrics settings">
+        <fd-dynamic-page-content cdkScrollable>
+          <fd-layout-panel>
+            <fd-layout-panel-header>
+              <fd-layout-panel-head>
+                <h4 fd-title>Metrics settings</h4>
+                <!-- <fd-layout-panel-description>Layout Panel Description</fd-layout-panel-description> -->
+              </fd-layout-panel-head>
+              <fd-layout-panel-actions>
+                <button fd-button fdType="transparent" glyph="add" ariaLabel="Cart Ghost" label="Create a new setting" title="" (click)="openCreateMetricsDialog()"></button>
+                <!-- <fd-icon font="SAP-icons-TNT" glyph="technicalsystem"></fd-icon> -->
+              </fd-layout-panel-actions>
+            </fd-layout-panel-header>
+            <fd-layout-panel-body>
+                <app-metric-item (itemChange)="saveItemChange($event)" (itemDelete)="deleteItem($event)" *ngFor="let metricItem of metricItems" [metricItem]="metricItem"></app-metric-item>
+            </fd-layout-panel-body>
+          </fd-layout-panel>
+        </fd-dynamic-page-content>
+      </fd-tab>
+      <fd-tab title="Analytics activation">
+        <fd-dynamic-page-content cdkScrollable>
+          Analytics activation
+        </fd-dynamic-page-content>
+      </fd-tab>
+    </fd-tab-list>
+  </fd-dynamic-page>
+
+  <!-- <app-dialog-template #metricSettingDialog></app-dialog-template> -->
+
+  <!-- <ng-template let-dialog let-dialogConfig="dialogConfig" #createMetricsDialog>
+    <fd-dialog [dialogConfig]="dialogConfig" [dialogRef]="dialog">
+        <fd-dialog-header>
+            <h1 id="fd-dialog-header-10" fd-title>The History of Pineapple</h1>
+        </fd-dialog-header>
+
+        <fd-dialog-body>
+            <app-metric-settings></app-metric-settings>
+            
+        </fd-dialog-body>
+
+        <fd-dialog-footer>
+            <fd-button-bar
+                fdType="emphasized"
+                label="Save"
+                fdCompact
+                (click)="dialog.close('Continue')"
+                ariaLabel="Interested Emphasized"
+            ></fd-button-bar>
+
+            <fd-button-bar
+                fdInitialFocus
+                label="Cancel"
+                fdCompact
+                (click)="dialog.dismiss('Cancel')"
+                ariaLabel="Cancel"
+            ></fd-button-bar>
+        </fd-dialog-footer>
+    </fd-dialog>
+</ng-template> -->
