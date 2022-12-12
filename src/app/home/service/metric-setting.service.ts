@@ -16,7 +16,7 @@ export class MetricSettingService {
     if(this.metricItems){
       return of(this.metricItems);
     }else{
-      return this.http.get<Metric[]>("/assets/metricItems.json")
+      return this.http.get<Metric[]>("assets/metricItems.json")
     }
   }
 
@@ -30,7 +30,7 @@ export class MetricSettingService {
   }
 
   getSupplierGroup(){
-    return this.http.get("/assets/supplierGroup.json")
+    return this.http.get("assets/supplierGroup.json")
   }
 
   updateMetric(item: Metric){
